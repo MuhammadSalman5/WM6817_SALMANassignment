@@ -194,3 +194,114 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+//(Chapter 53-58)
+
+//Task1
+// function img() {
+//         var images = ["image/1.jpg", "image/2.jpg", "image/3.jpg", "image/4.png"];
+    
+//         for (var i = 0; i < images.length; i++) {
+//             document.getElementById("modal-img").innerHTML = images[i].src;
+//         }
+//         var modal = document.getElementById('modal');
+
+// modal.classList.add('modal-open')
+// modal.classList.remove('modal-close');
+// }
+    
+// img();
+// function onClosedImagModal(){
+//         var modal = document.getElementById('modal');
+//         modal.classList.add('modal-open')
+//         modal.classList.remove('modal-close');
+//         setTimeout(()=>{ modal.style.display = "none"; }, 550)
+// }
+
+//Task2
+
+// function changeFontSize(target) {
+//         var para = document.getElementById("para");
+//         var computedStyle = window.getComputedStyle
+//               ? getComputedStyle(para) 
+//               : para.currentStyle;     
+//         var fontSize;
+      
+//         if (computedStyle) { 
+//             fontSize = parseFloat(computedStyle && computedStyle.fontSize);
+      
+//             if (target == document.getElementById("button1")) {
+//               fontSize += 5;
+//             } else if (target == document.getElementById("button2")) {
+//               fontSize -= 5;
+//             }
+//             para.style.fontSize = fontSize + "px";
+//         }
+// }
+
+
+        //(Chapter58-67)
+
+//Task1
+
+//i.
+
+// var a = document.getElementById("main-content");
+// console.log(a.nodeName)
+
+//ii.
+
+// var a = document.getElementById("main-content");
+// console.log(a.childNodes)
+
+//iii.
+
+// var d = document.getElementsByClassName("render"); 
+//  var p = d.childNodes; 
+// console.log(p.innerHTML);
+
+//iv.
+// var a = document.getElementById("first-name");
+// var newTxt = document.createTextNode("Mahnoor");
+// a.appendChild(newTxt);
+
+//v.
+
+// var a = document.getElementById("last-name")
+// var newTxt = document.createTextNode("Shoukat");
+// a.appendChild(newTxt);
+
+// var a = document.getElementById("email")
+// var newTxt = document.createTextNode("manoa0741@gmail.com");
+// a.appendChild(newTxt);
+
+//Task2
+
+//i.
+
+// var a = document.getElementById("form-content");
+// console.log(a.nodeType)
+
+//ii.
+// var a = document.getElementById("last-name");
+// console.log(a.nodeType)
+// console.log(a.childNodes)
+
+//iii.
+// var a = document.getElementById("last-name");
+// var b = document.createElement("img")
+// console.log(b)
+
+//iv.
+// var a = document.getElementById("main-content");
+// console.log(a.firstChild)
+// console.log(a.lastChild)
+
+//v.
+// var a = document.getElementById("last-name");
+// console.log(a.nextSibling)
+// console.log(a.previousSibling)
+
+//vi.
+// var a = document.getElementById("email");
+// console.log(a.nodeType)
+// console.log(a.parentNode)
